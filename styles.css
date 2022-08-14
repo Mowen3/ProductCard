@@ -1,76 +1,109 @@
-     /*CSS Reset*/
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body{
+  background: hsl(30, 38%, 92%);
 }
 
-/* Remove default margin */
-body,
-h1,
+.card{
+  border-radius: 2%;
+  background: white;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  margin: auto;
+  width: 600px;
+  height: 450px;
+  position: relative; left: 0px; top: 150px;
+}
+
+.perfume-image {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.perfume,
+.cut-price,
+.para {
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume{
+  position: relative; left: 25px; top: 20px;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 32px;
+  position: relative; left: 25px; top: 20px;
+  color: hsl(212, 21%, 14%);
+}
+
 h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+.price {
+  font-family: "Fraunces";
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+.para {
+  font-size: 16px;
+  line-height: 1.2rem;
+  font-weight: 500;
+  position: relative; left: 25px; top: 20px;
+  width: 90%;
+  height: 15%;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+span {
+  display: inline-block;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+.prices {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative; left: 25px; top: 35px;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+.price {
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+.cut-price {
+  padding-left: 20px;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+.cart {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84%;
+  height: 45px;
+  margin-top: 25px;
+  padding: 11px;
+  border-radius: 7px;
+  background-color: hsl(158, 36%, 37%);
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 700;
+  border: none;
+  position: relative; left: 25px; top: 45px;
+}
+
+button:hover {
+  background-color: rgba(19, 51, 39, 1);
+}
+
+.attribution{
+  position: relative; left: 30%; top: 175px;
 }
